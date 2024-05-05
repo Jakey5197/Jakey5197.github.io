@@ -2,23 +2,8 @@
 <html>
 
 <head>
-    <title>
-          Getting Clients IP
-      </title>
-    <style>
-        p,
-        h1 {
-            color: green;
-        }
-    </style>
-
-    <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    </script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-        /* Add "https://api.ipify.org?format=json" to 
-        get the IP Address of user*/
         $(document).ready(()=>{
             $.getJSON("https://api.ipify.org?format=json",
             function (data) {
@@ -32,6 +17,7 @@
 
 <body>
     <center>
+        <img src="https://www.youtube.com/watch?v=xvFZjo5PgG0">
         <h1>
               GeeksforGeeks
           </h1>
@@ -39,7 +25,6 @@
               Public IP Address of user is:
           </h3>
         <p id="gfg"></p>
-
     </center>
 </body>
 
