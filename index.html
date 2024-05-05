@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="app.css"/>
-        <script src="app.js"></script>
-    <body>
-        <h1>Welcome to my test website!</h1>
-        <button onclick="action1()">Do thing 1</button>
-    </body>
-    </head>
+
+<head>
+    <title>
+        Getting Clients IP
+    </title>
+
+    <style>
+        div{
+            text-align: center;
+        }
+        h1 {
+            color: green;
+        }
+    </style>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>
+            GeeksforGeeks
+        </h1>
+        <h3>
+            Getting Client IP address
+        </h3>
+        <p id="result"></p>
+    </div>
+    <script>
+        $(document).ready(()=>{
+            // Use "https://ipinfo.io" link to use the
+            // ipinfo for getting the ip address
+            $.getJSON("https://ipinfo.io",
+            function (response) {
+                $('#result').html(`IP Address: ${response.ip}`)
+            }, "jsonp");
+        })  
+    </script>
+</body>
+
 </html>
