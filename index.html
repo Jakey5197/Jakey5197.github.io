@@ -2,17 +2,26 @@
 <html>
 <header>
     <link src="stylesheet" href="app.css">
-    <script src="app.php"></script>
-    <script>
-        fetch('https://api.ipify.org')
-            .then((res) => res.text())
-            .then(ip => console.log(ip))
-            .catch(err => console.log(err))
-    </script>
 </header>
 
 <body>
     <h1>Welcome To my Website!</h1>
+    <input type="text" id="user_input" placeholder="Enter your IP :D" maxlength="20">
+    <input type="button" id="button1" value="Click Me!">
+    
+    <p class="output" id="output1"></p>
+
+    <script src="app.js">
+        const user_ip = "placeholder";
+        //getting the ip
+        fetch('https://api.ipify.org')
+            .then((res) => res.text())
+            .then(ip => console.log(ip))
+            .then(user_ip = ip)
+            .catch(err => console.log(err))
+        get_ip(ip)
+    </script>
+
 </body>
 
 </html>
