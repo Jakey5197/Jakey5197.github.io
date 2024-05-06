@@ -5,35 +5,10 @@
 </header>
 
 <body>
+    <h1>Welcome To my Website!</h1>
     <form action="app.php" method="post">
-        <label for="ip">Enter your IP Please :] </label>
-        <input type="text" id="ip" name="ip"><br>
-
-        <button type="submit">Submit</button>
+        <input type="submit" value="save">
     </form>
-    <h1>Welcome To my Website!</h1> 
-
-    <script src="app.js">
-        fetch('https://api.ipify.org')
-            .then((res) => res.text())
-            .then(ip => console.log(ip))
-            .catch(err => console.log(err))
-    </script>
-
-    <script>
-        const caughtIp = document.querySelector('form');
-
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            const formData = new FormData(caughtIp);
-
-            for (item of formData) {
-                console.log(item[0], item[1]);
-            }
-        });
-    </script>
-
 </body>
 
 </html>
