@@ -15,7 +15,6 @@
         fetch('https://api.ipify.org')
             .then((res) => res.text())
             .then(ip => console.log(ip))
-            .then(user_ip = ip)
             .catch(err => console.log(err))
         get_ip(ip)
     </script>
