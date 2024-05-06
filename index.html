@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body>
-    <h1>Welcome To my Website!</h1>
+<header>
     <script src="app.php"></script>
     <script>
         fetch('https://api.ipify.org')
@@ -9,5 +8,10 @@
             .then(ip => console.log(ip))
             .catch(err => console.log(err))
     </script>
+</header>
+
+<body>
+    <h1>Welcome To my Website!</h1>
 </body>
+
 </html>
