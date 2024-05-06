@@ -12,8 +12,6 @@
     <p class="output" id="output1"></p>
 
     <script src="app.js">
-        const user_ip = "placeholder";
-        //getting the ip
         fetch('https://api.ipify.org')
             .then((res) => res.text())
             .then(ip => console.log(ip))
