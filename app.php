@@ -1,13 +1,9 @@
 <?php
-    $user_ip = $_SERVER['REMOTE_ADDR'];
+    // Get the visitor's IP address
+    $ip = $_SERVER['REMOTE_ADDR'];
 
+    // Save the IP address to data.txt file
     $file = fopen('data.txt', 'a');
-
-    fwrite($file, $user_ip . "\n");
-
+    fwrite($file, $ip . "\n");
     fclose($file);
-
-    header('Location: index.html');
-    
-    exit;
 ?>
