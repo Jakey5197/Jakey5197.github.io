@@ -1,6 +1,6 @@
-h1 {
-    color : plum;
-}
 body {
+    h1 {
+        color : plum;
+    }
     background-color: beige;
 }
